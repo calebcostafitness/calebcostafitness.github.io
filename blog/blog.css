@@ -1,0 +1,119 @@
+/* blog page specific styles */
+
+img {
+  filter: grayscale(100%);
+}
+
+header {
+  position: relative !important;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3vw;
+  padding: 3vw 10vw;
+}
+
+.headerArticle {
+  display: flex;
+  gap: 3vw;
+}
+
+.headerArticle p {
+  color: gray;
+  font-size: clamp(10px, 2vw, 20px);
+}
+
+.headerArticle a {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: clamp(15px, 2vw, 20px);
+}
+
+.headerArticle a:hover {
+  text-decoration: underline;
+}
+
+.headerArticle h1 {
+  font-size: clamp(20px, 3vw, 50px);
+}
+
+.headerArticle img {
+  width: 50%;
+  border-radius: 10px;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+}
+
+.headerArticle > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  width: 50%;
+}
+
+@media (max-width: 715px) {
+  .headerArticle {
+    flex-wrap: wrap;
+  }
+  .headerArticle > * {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .article {
+    flex-basis: 40%;
+  }
+  .article p {
+    display: none;
+  }
+}
+
+.article {
+  width: 27.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+
+.article img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.article h1 {
+  font-size: clamp(15px, 2vw, 45px);
+}
+
+.article a {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: clamp(10px, 1vw, 15px);
+}
+
+.article a:hover {
+  text-decoration: underline;
+}
+
+.article p {
+  color: gray;
+  font-size: clamp(5px, 1vw, 15px);
+}
+
+.article > div {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.articleContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-between;
+  margin: 3vw 0;
+}

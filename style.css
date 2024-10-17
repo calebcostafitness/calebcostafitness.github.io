@@ -1,0 +1,73 @@
+/* universal styling */
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Work+Sans:wght@700&display=swap");
+
+:root {
+  --primary: #5a00c2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Work Sans", serif;
+}
+
+/* Header and Nav Styling */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 100px;
+  position: fixed;
+  width: 100vw;
+  align-items: center;
+  background-color: white;
+}
+
+header > h1 {
+  color: var(--primary);
+  text-align: center;
+}
+
+header > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+header li {
+  margin: 0 10px;
+  font-size: clamp(10px, 2vw, 16px);
+}
+
+header a,
+header p {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header a:hover,
+header p:hover {
+  color: var(--primary);
+}
+
+/* socials */
+.socialsDropDown {
+  display: none;
+}
+
+.hovering {
+  display: block !important;
+}

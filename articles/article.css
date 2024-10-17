@@ -1,0 +1,48 @@
+/* article page specific styling */
+
+header {
+  position: relative !important;
+}
+
+main {
+  padding: 0 clamp(400px, 20vw, 400px);
+}
+
+main p,
+main ul {
+  font-size: clamp(10px, 2vw, 18px);
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+main h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: clamp(30px, 5vw, 80px);
+  color: var(--primary);
+}
+
+main img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+main > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 45px 0;
+  gap: 20px;
+}
+
+main h2 {
+  font-size: clamp(20px, 3vw, 40px);
+  margin: 40px 0;
+}
